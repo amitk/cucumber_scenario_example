@@ -1,4 +1,7 @@
-Feature: Check funtioning of a simple calculator
+Feature: Basic Calculator
+
+  A basic calculator, for duing calculations on two number
+  performing basic operations on them like +, -, * and /.
 
 
   Scenario: Addition of two numbers
