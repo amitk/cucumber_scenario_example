@@ -11,7 +11,7 @@ When(/^I perform addition of these two numbers/) do
 end
 
 Then(/^I get 18/) do
-  @result == 18
+  expect(@result).to eq 18
 end
 
 Given(/^I have two numbers 11 and 7/) do
@@ -25,7 +25,7 @@ When(/^I perform substraction of these two numbers/) do
 end
 
 Then(/^I get 4/) do
-  @result == 4
+  expect(@result).to eq 4
 end
 
 When(/^I perform multiplication operation on them/) do
@@ -34,7 +34,7 @@ When(/^I perform multiplication operation on them/) do
 end
 
 Then(/^I get 77 as result/) do
-  @result = 77
+  expect(@result).to eq 77
 end
 
 Given(/^I have two number 7 and 0/) do
@@ -47,11 +47,11 @@ end
 
 When(/^I perform division by zero/) do
   calci = Calculator.new
-  @result = calci.subtract(@num1, @num2)
+  @result = calci.divide(@num1, @num2)
 end
 
 Then(/^I get invalid divisor as a result/) do
-  @result == 'Invalid Divisor'
+  expect(@result).to eq 'Invalid Divisor'
 end
 
 Given(/^I have two numbers 77 and 11/) do
@@ -65,5 +65,5 @@ When(/^I perform division operation on them/) do
 end
 
 Then(/^I get 7 as result/) do
-  @result == 7
+  expect(@result).to eq 7
 end

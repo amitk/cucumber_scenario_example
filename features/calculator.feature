@@ -1,6 +1,6 @@
 Feature: Basic Calculator
 
-  A basic calculator, for duing calculations on two number
+  A basic calculator, for during calculations on two number
   performing basic operations on them like +, -, * and /.
 
 
